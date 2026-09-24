@@ -10,25 +10,25 @@ The analyzer works with live network traffic and provides statistical insights i
 
 ## Features
 
-*- Live network packet capture using Scapy
-*- Automatic local IP detection
-*- TCP and UDP traffic analysis
-*- Incoming and outgoing traffic analysis
-*- IPv4 and IPv6 packet handling
-*- Safe handling of non-IP packets
-*- Unique source and destination IP counting
-*- Top TCP destination port analysis
-*- Top UDP destination port analysis
-*- TCP SYN packet counting
-*- TCP RST packet counting
-*- Traffic visualization using Matplotlib
-*- Automatic generation of traffic charts
+* Live network packet capture using Scapy
+* Automatic local IP detection
+* TCP and UDP traffic analysis
+* Incoming and outgoing traffic analysis
+* IPv4 and IPv6 packet handling
+* Safe handling of non-IP packets
+* Unique source and destination IP counting
+* Top TCP destination port analysis
+* Top UDP destination port analysis
+* TCP SYN packet counting
+* TCP RST packet counting
+* Traffic visualization using Matplotlib
+* Automatic generation of traffic charts
 
 ## Technologies
 
-*- Python
-*- Scapy
-*- Matplotlib
+* Python
+* Scapy
+* Matplotlib
 
 ## Project Structure
 
@@ -78,11 +78,11 @@ The tool automatically detects the local IPv4 address instead of relying on a ha
 
 `analyzer.py` processes the captured packets and extracts information such as:
 
-*- TCP and UDP packet counts
-*- Incoming and outgoing traffic
-*- Source and destination IP addresses
-*- TCP and UDP destination ports
-*- TCP SYN and RST flags
+* TCP and UDP packet counts
+* Incoming and outgoing traffic
+* Source and destination IP addresses
+* TCP and UDP destination ports
+* TCP SYN and RST flags
 
 The analyzer safely handles IPv4, IPv6, and non-IP packets.
 
@@ -90,10 +90,10 @@ The analyzer safely handles IPv4, IPv6, and non-IP packets.
 
 `report.py` generates charts showing:
 
-*- TCP vs UDP traffic
-*- Top UDP destination ports
-*- Top TCP destination ports
-*- Incoming vs outgoing traffic
+* TCP vs UDP traffic
+* Top UDP destination ports
+* Top TCP destination ports
+* Incoming vs outgoing traffic
 
 ## Testing and Validation
 
@@ -101,9 +101,9 @@ The project was tested using real network traffic on a home fiber network with m
 
 During the validation experiments:
 
-*- Pinterest was actively used on the analysis PC.
-*- Netflix was streaming on an iPad connected to the same network.
-*- Other connected devices were also generating background network activity through activities such as video streaming, social media, applications, reading, and gaming.
+* Pinterest was actively used on the analysis PC.
+* Netflix was streaming on an iPad connected to the same network.
+* Other connected devices were also generating background network activity through activities such as video streaming, social media, applications, reading, and gaming.
 
 The analyzer captured traffic available to the analysis PC's network interface during the tests.
 
@@ -136,17 +136,18 @@ These results demonstrate that the analyzer can process live network traffic gen
 
 The analyzer generates the following report images:
 
- `src/reports/traffic_protocols.png`
- `src/reports/top_udp_ports.png`
- `src/reports/top_tcp_ports.png`
- `src/reports/traffic_direction.png`
+- `src/reports/traffic_protocols.png`
+- `src/reports/top_udp_ports.png`
+- `src/reports/top_tcp_ports.png`
+- `src/reports/traffic_direction.png`
+
 
 ## Installation
 
 Clone the repository and install the required dependencies:
 
 ```bash
-**- pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -154,24 +155,24 @@ Clone the repository and install the required dependencies:
 Navigate to the `src` directory:
 
 ```bash
-*- cd src
+cd src
 ```
 
 Run the analyzer:
 
 ```bash
-*- python sniffer.py
+python sniffer.py
 ```
 
 The tool will capture network traffic, analyze the packets, display the collected statistics, and generate traffic charts.
 
 ## Requirements
 
-*- Python 3.x
-*-Scapy 2.7.0
-*-Matplotlib
-*-A network interface capable of capturing traffic
-*-Appropriate permissions for packet capture on the operating system
+* Python 3.x
+* Scapy 2.7.0
+* Matplotlib
+* A network interface capable of capturing traffic
+* Appropriate permissions for packet capture on the operating system
 
 ## Disclaimer
 
@@ -183,14 +184,14 @@ Only capture and analyze network traffic on systems and networks that you own or
 
 Possible future improvements include:
 
-*-More detailed DNS traffic analysis
-*-Service and protocol identification
-*-Traffic filtering
-*-Exporting analysis results to CSV or JSON
-*-Additional security-oriented traffic indicators
+* More detailed DNS traffic analysis
+* Service and protocol identification
+* Traffic filtering
+* Exporting analysis results to CSV or JSON
+* Additional security-oriented traffic indicators
 
 ## Author
 
-Ceedra Naser Mohammed
+**Ceedra Naser Mohammed**
 
 Network and Information Security Student
